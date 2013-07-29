@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btnSeven"
+        style="@style/CalculatorButtonStyle"
+        android:layout_marginTop="129dp"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/btnEight"
+        style="@style/CalculatorButtonStyle"
+        android:layout_alignTop="@+id/btnSeven"
+        android:layout_toRightOf="@+id/btnSeven"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/btnNine"
+        style="@style/CalculatorButtonStyle"
+        android:layout_alignTop="@+id/btnEight"
+        android:layout_toRightOf="@+id/btnEight"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/btnFour"
+        style="@style/CalculatorButtonStyle"
+        android:layout_alignLeft="@+id/btnSeven"
+        android:layout_below="@+id/btnSeven"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/btnFive"
+        style="@style/CalculatorButtonStyle"
+        android:layout_alignBaseline="@+id/btnFour"
+        android:layout_alignBottom="@+id/btnFour"
+        android:layout_alignLeft="@+id/btnEight"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/btnSix"
+        style="@style/CalculatorButtonStyle"
+        android:layout_alignLeft="@+id/btnNine"
+        android:layout_alignTop="@+id/btnFive"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/btnOne"
+        style="@style/CalculatorButtonStyle"
+        android:layout_alignLeft="@+id/btnFour"
+        android:layout_below="@+id/btnFour"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/btnTwo"
+        style="@style/CalculatorButtonStyle"
+        android:layout_alignLeft="@+id/btnFive"
+        android:layout_alignTop="@+id/btnOne"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/btnThree"
+        style="@style/CalculatorButtonStyle"
+        android:layout_alignBaseline="@+id/btnTwo"
+        android:layout_alignBottom="@+id/btnTwo"
+        android:layout_alignLeft="@+id/btnSix"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/btnZero"
+        style="@style/CalculatorButtonStyle"
+        android:layout_below="@+id/btnOne"
+        android:layout_toLeftOf="@+id/btnTwo"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="0"
+        android:textSize="40sp" 
+        android:gravity="right"/>
+
+    <Button
+        android:id="@+id/btnDivide"
+        style="@style/CalculatorButtonStyle"
+        android:layout_alignBaseline="@+id/btnSix"
+        android:layout_alignBottom="@+id/btnSix"
+        android:layout_alignLeft="@+id/btnMultiply"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/btnMultiply"
+        style="@style/CalculatorButtonStyle"
+        android:layout_above="@+id/btnSix"
+        android:layout_toRightOf="@+id/btnNine"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/btnMinus"
+        style="@style/CalculatorButtonStyle"
+        android:layout_above="@+id/btnPlus"
+        android:layout_alignLeft="@+id/btnDivide"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/btnPlus"
+        style="@style/CalculatorButtonStyle"
+        android:layout_alignBaseline="@+id/btnEqual"
+        android:layout_alignBottom="@+id/btnEqual"
+        android:layout_toRightOf="@+id/btnThree"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/btnEqual"
+        style="@style/CalculatorButtonStyle"
+        android:layout_alignLeft="@+id/btnTwo"
+        android:layout_alignRight="@+id/btnThree"
+        android:layout_below="@+id/btnTwo"
+        android:text="=" />
+
+    <Button
+        android:id="@+id/btnClear"
+        style="@style/CalculatorButtonStyle"
+        android:layout_above="@+id/btnNine"
+        android:layout_alignLeft="@+id/btnNine"
+        android:layout_alignRight="@+id/btnMultiply"
+        android:text="clear" />
+
+</RelativeLayout>
